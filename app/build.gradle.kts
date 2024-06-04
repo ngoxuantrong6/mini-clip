@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "np.com.bimalkafle.miniclip"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "np.com.bimalkafle.miniclip"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -60,5 +60,8 @@ dependencies {
     //firebase ui
     implementation ("com.firebaseui:firebase-ui-firestore:8.0.2")
     implementation ("com.firebaseui:firebase-ui-storage:8.0.2")
+
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    implementation("com.google.firebase:firebase-analytics")
 
 }

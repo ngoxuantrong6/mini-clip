@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "661950452535",
-    "project_id": "mini-clip",
-    "storage_bucket": "mini-clip.appspot.com"
+    "project_number": "1083504266903",
+    "project_id": "mini-clip-7b709",
+    "storage_bucket": "mini-clip-7b709.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:661950452535:android:49eece95db7586ba5f00b2",
+        "mobilesdk_app_id": "1:1083504266903:android:5886efcd48158d44de63d2",
         "android_client_info": {
           "package_name": "np.com.bimalkafle.miniclip"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBIieYUFPmcubxFIU8RhShayqCNSGLG-fQ"
+          "current_key": "AIzaSyCq3l1u3oEp7pWeTg5AkqsxX1GTY3rpudY"
         }
       ],
       "services": {
