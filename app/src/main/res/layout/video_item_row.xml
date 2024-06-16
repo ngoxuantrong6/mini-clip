@@ -6,10 +6,10 @@
     android:background="@color/black">
 
     <VideoView
+        android:id="@+id/video_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:id="@+id/video_view"/>
+        android:layout_centerInParent="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -25,6 +25,61 @@
         android:layout_centerInParent="true"
         android:id="@+id/progress_bar"
         />
+
+    <LinearLayout
+        android:id="@+id/like_comment_layout"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:gravity="right"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/like_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_like" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/like_count"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/comment_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_comment" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_count"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

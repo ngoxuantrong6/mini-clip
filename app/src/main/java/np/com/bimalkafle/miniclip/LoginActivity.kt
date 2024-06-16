@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.view.View
 import com.google.firebase.auth.FirebaseAuth

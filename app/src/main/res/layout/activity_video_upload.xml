@@ -68,11 +68,11 @@
         android:id="@+id/upload_view">
 
         <ImageView
+            android:id="@+id/add_icon"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/icon_add"
             android:layout_centerInParent="true"
-            android:id="@+id/add_icon"
+            android:src="@drawable/icon_add"
             app:tint="@color/black" />
         <TextView
             android:layout_width="match_parent"
