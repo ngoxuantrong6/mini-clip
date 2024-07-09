@@ -20,7 +20,7 @@
             android:layout_margin="10dp"
             android:gravity="top"
             android:layout_toStartOf="@id/post_thumbnail_view"
-            android:hint="Write your caption here"
+            android:hint="Nhập tiêu đề video của bạn"
             android:padding="10dp"/>
 
         <ImageView
@@ -40,7 +40,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cancel"
+                android:text="Hủy"
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_weight="1"
                 android:id="@+id/cancel_post_btn"/>
@@ -53,7 +53,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Post"
+                android:text="Đăng"
                 android:layout_weight="1"
                 android:id="@+id/submit_post_btn"/>
 
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/add_icon"
             android:gravity="center"
-            android:text="Click to Upload Video"/>
+            android:text="Nhấn để tải video lên"/>
 
     </RelativeLayout>
 

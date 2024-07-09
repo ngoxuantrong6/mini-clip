@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         android:textSize="14sp"
-        tools:text="Logout"
+        tools:text="Đăng xuất"
         android:id="@+id/profile_btn"/>
 
     <LinearLayout
@@ -59,7 +59,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Following"/>
+                android:text="Đang Follow"/>
 
         </LinearLayout>
         <LinearLayout
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Posts"/>
+                android:text="Bài đăng"/>
 
         </LinearLayout>
 
@@ -108,6 +108,11 @@
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
         android:layout_height="2dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"/>
 
 
 </LinearLayout>

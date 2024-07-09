@@ -74,14 +74,14 @@ class SignupActivity : AppCompatActivity() {
                 Firebase.firestore.collection("users")
                     .document(user.uid)
                     .set(userModel).addOnSuccessListener {
-                        UiUtil.showToast(applicationContext,"Account created successfully")
+                        UiUtil.showToast(applicationContext,"Tạo tài khoản thành công")
                         setInProgress(false)
                         startActivity(Intent(this,MainActivity::class.java))
                         finish()
                     }
            }
         }.addOnFailureListener {
-            UiUtil.showToast(applicationContext,it.localizedMessage?: "Something went wrong")
+            UiUtil.showToast(applicationContext,it.localizedMessage?: "Đã xảy ra lỗi")
             setInProgress(false)
         }
     }

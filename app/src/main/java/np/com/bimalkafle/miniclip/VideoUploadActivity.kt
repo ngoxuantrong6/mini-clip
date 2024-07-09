@@ -56,7 +56,7 @@ class VideoUploadActivity : AppCompatActivity() {
 
     private fun postVideo(){
         if(binding.postCaptionInput.text.toString().isEmpty()){
-            binding.postCaptionInput.setError("Write something")
+            binding.postCaptionInput.setError("Tiêu đề không được để trống")
             return;
         }
         setInProgress(true);
@@ -93,11 +93,11 @@ class VideoUploadActivity : AppCompatActivity() {
             .set(videoModel)
             .addOnSuccessListener {
                 setInProgress(false);
-                UiUtil.showToast(applicationContext,"Video uploaded")
+                UiUtil.showToast(applicationContext,"Video đã được tải lên")
                 finish()
             }.addOnFailureListener {
                 setInProgress(false)
-                UiUtil.showToast(applicationContext,"Video failed to upload")
+                UiUtil.showToast(applicationContext,"Video không thể tải lên")
             }
     }
 

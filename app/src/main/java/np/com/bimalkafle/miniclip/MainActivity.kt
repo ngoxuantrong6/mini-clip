@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavBar.setOnItemSelectedListener {menuItem->
             when(menuItem.itemId){
                 R.id.bottom_menu_home->{
-                    UiUtil.showToast(this,"Home")
+                    UiUtil.showToast(this,"Trang chủ")
                 }
                 R.id.bottom_menu_add_video->{
                     startActivity(Intent(this,VideoUploadActivity::class.java))

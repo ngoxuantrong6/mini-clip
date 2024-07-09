@@ -7,5 +7,8 @@ data class VideoModel(
     var title : String = "",
     var url : String = "",
     var uploaderId : String = "",
-    var createdTime : Timestamp = Timestamp.now()
+    var createdTime : Timestamp = Timestamp.now(),
+    var likes : MutableList<String> = mutableListOf(),
+    var comments : MutableList<String> = mutableListOf(),
+    var commentCount : Int = 0
 )

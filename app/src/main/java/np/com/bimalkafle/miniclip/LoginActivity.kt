@@ -67,12 +67,12 @@ class LoginActivity : AppCompatActivity() {
             email,
             password
         ).addOnSuccessListener {
-            UiUtil.showToast(this,"Login successfully")
+            UiUtil.showToast(this,"Đăng nhập thành công")
             setInProgress(false)
             startActivity(Intent(this,MainActivity::class.java))
             finish()
         }.addOnFailureListener {
-            UiUtil.showToast(applicationContext,it.localizedMessage?: "Something went wrong")
+            UiUtil.showToast(applicationContext,it.localizedMessage?: "Đã xảy ra lỗi")
             setInProgress(false)
         }
     }
