@@ -20,7 +20,6 @@ class CommentListAdapter(private val commentList: MutableList<CommentModel>) :
 
     inner class CommentViewHolder(private val binding: CommentItemRowBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bindComment(commentModel: CommentModel) {
-            Log.d("YourTag", "vào CommentViewHolder")
             binding.usernameView.text = commentModel.username
             binding.commentView.text = commentModel.comment
             Glide.with(binding.profileIcon).load(commentModel.profilePhoto)
@@ -51,7 +50,6 @@ class CommentListAdapter(private val commentList: MutableList<CommentModel>) :
         return commentList.size
     }
 
-//     Optional: Method to update comment list
     fun updateCommentList(newCommentList: List<CommentModel>) {
         commentList.clear()
         commentList.addAll(newCommentList)

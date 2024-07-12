@@ -50,11 +50,11 @@ class LoginActivity : AppCompatActivity() {
         val password = binding.passwordInput.text.toString()
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            binding.emailInput.setError("Email not valid")
+            binding.emailInput.setError("Email không hợp lệ")
             return;
         }
         if(password.length<6){
-            binding.passwordInput.setError("Minimum 6 character")
+            binding.passwordInput.setError("Tối thiểu 6 ký tự")
             return
         }
 

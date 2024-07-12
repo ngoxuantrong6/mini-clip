@@ -61,7 +61,6 @@ class VideoUploadActivity : AppCompatActivity() {
         }
         setInProgress(true);
         selectedVideoUri?.apply {
-            //store in firebase cloud storage
 
            val videoRef =  FirebaseStorage.getInstance()
                 .reference
@@ -69,7 +68,7 @@ class VideoUploadActivity : AppCompatActivity() {
             videoRef.putFile(this)
                 .addOnSuccessListener {
                     videoRef.downloadUrl.addOnSuccessListener {downloadUrl->
-                        //video model store in firebase firestore
+                        //lưu videoModel vao firestore
                         postToFirestore(downloadUrl.toString())
                     }
                 }
